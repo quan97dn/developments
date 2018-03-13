@@ -1,0 +1,21 @@
+<h1>Employee List</h1>
+
+<table class="table" >
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Username</td>
+			<td>Password</td>
+			<td>Level</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of employee" >
+			<td>{{ item.id }}</td>
+			<td>{{ item.fullname }}</td>
+			<td>{{ item.class }}</td>
+			<td>{{ item.created_at | date }}</td>
+			<td>{{ item.created_at | date }}</td>
+		</tr>
+	</tbody>
+</table>
